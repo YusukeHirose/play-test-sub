@@ -8,3 +8,5 @@ lazy val play_test_sub = (project in file(".")).enablePlugins(PlayJava)
 scalaVersion := "2.13.1"
 
 libraryDependencies += guice
+
+PlayKeys.devSettings += ("play.http.router", "sub.Routes")
