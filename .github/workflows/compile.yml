@@ -1,0 +1,24 @@
+name: CompileCheck
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v1
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: '11.0.1'
+
+      - name: Install sbt
+        run: |
+          sudo apt-get update
+          sudo apt-get install
+
+      - name: Compile
+        run: sbt compile
