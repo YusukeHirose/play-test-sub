@@ -9,4 +9,4 @@ scalaVersion := "2.13.1"
 
 libraryDependencies += guice
 
-PlayKeys.devSettings += ("play.http.router", "sub.Routes")
+//PlayKeys.devSettings += ("play.http.router", "sub.Routes")
