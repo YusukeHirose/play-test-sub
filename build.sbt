@@ -1,3 +1,7 @@
+ThisBuild / organization := "play-test"
+ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / scalaVersion := "2.13.1"
+
 name := """play-test-sub"""
 organization := "play-test-sub"
 
