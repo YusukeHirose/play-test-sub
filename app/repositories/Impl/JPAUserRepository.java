@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.concurrent.CompletionStage;
 import java.util.stream.Stream;
 
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
 import models.DatabaseExecutionContext;
@@ -17,6 +18,7 @@ import static java.util.concurrent.CompletableFuture.supplyAsync;
 /** @author hiroseyusuke */
 public class JPAUserRepository extends RepositoryBase implements UserRepository {
 
+  @Inject
   public JPAUserRepository(JPAApi jpaApi, DatabaseExecutionContext databaseExecutionContext) {
     super(jpaApi, databaseExecutionContext);
   }
