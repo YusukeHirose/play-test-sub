@@ -15,4 +15,14 @@ libraryDependencies += guice
 
 libraryDependencies += javaJdbc
 
+libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.17"
+
+libraryDependencies ++= Seq(
+  javaJpa,
+  "org.hibernate" % "hibernate-core" % "5.4.2.Final"
+)
+
+
+
+
 //PlayKeys.devSettings += ("play.http.router", "sub.Routes")
