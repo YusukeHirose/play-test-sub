@@ -13,4 +13,6 @@ scalaVersion := "2.13.1"
 
 libraryDependencies += guice
 
+libraryDependencies += javaJdbc
+
 //PlayKeys.devSettings += ("play.http.router", "sub.Routes")
